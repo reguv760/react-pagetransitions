@@ -7,6 +7,16 @@ Demo: [https://reguv760.github.io/react-pagetransitions/](https://reguv760.githu
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
+## Notes for deployment to GitHub by gh-pages + BrowserRouter
+
+To test using github pages
+
+1. Install gh-pages package
+   `npm i gh-pages --save-dev`
+
+2. Replace BrowserRouter in index.js to HashRouter
+   `import { HashRouter } from 'react-router-dom'`
+
 ## Table of Contents
 
 - [Updating to New Releases](#updating-to-new-releases)
