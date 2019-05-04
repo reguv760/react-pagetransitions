@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { HashRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 
 ReactDOM.render(
-  <HashRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Route path="/" component={App} />
-  </HashRouter>,
+  </BrowserRouter>,
   document.getElementById("root")
 );
 registerServiceWorker();

@@ -14,8 +14,8 @@ To test using github pages
 1. Install gh-pages package
    `npm i gh-pages --save-dev`
 
-2. Replace BrowserRouter in index.js to HashRouter
-   `import { HashRouter } from 'react-router-dom'`
+2. add the following attribute to `<BrowserRouter>` in index.js
+   `basename={process.env.PUBLIC_URL}`
 
 ## Table of Contents
 
